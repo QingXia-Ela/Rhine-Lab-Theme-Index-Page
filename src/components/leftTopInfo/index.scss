@@ -1,0 +1,56 @@
+.left_top_info {
+  position: absolute;
+  top: 8%;
+  left: 2rem;
+  width: 5.6rem;
+
+  .name,
+  .info,
+  .os {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-family: 'NWB';
+    font-size: 1rem;
+  }
+
+  .info {
+    font-size: .4rem;
+    overflow: hidden;
+  }
+
+  .os {
+    font-size: .8rem;
+    font-weight: 400;
+
+    strong {
+      font-family: 'NWB';
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    .left_top_info {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      width: 100%;
+      top: 3%;
+      left: 0;
+
+      .name,
+      .info,
+      .os {
+        display: flex;
+        justify-content: center;
+      }
+
+      .info {
+        display: none;
+      }
+    }
+  }
+}

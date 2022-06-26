@@ -1,0 +1,59 @@
+.left_bottom_info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 2rem;
+  bottom: 8%;
+  height: 0.4rem;
+  font-size: .36rem;
+  white-space: nowrap;
+  text-align: right;
+  overflow: hidden;
+  transition: all .8s;
+
+  span {
+    transform: translateX(-300%);
+    animation: leftBottomHideText 1.6s ease 1s;
+    animation-fill-mode: forwards;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: .4rem;
+    margin-right: .3rem;
+    background-color: #000;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    .left_bottom_info {
+      width: 100%;
+      bottom: 4%;
+      max-width: none;
+      left: 0;
+      justify-content: center;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.left_bottom_info.left_bottom_info_unactive {
+  right: 0;
+  transform: translateX(100%);
+}
+
+@keyframes leftBottomHideText {
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

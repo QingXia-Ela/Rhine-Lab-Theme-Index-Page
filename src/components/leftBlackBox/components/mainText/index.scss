@@ -1,0 +1,16 @@
+.left_black_box {
+  .main_text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+    padding: .4rem;
+    color: #fff;
+    text-align: center;
+
+    span {
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+  }
+}
