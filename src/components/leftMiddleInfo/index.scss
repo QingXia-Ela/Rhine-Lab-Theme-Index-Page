@@ -6,19 +6,21 @@
   top: 50%;
   left: 0;
   width: 3.6rem;
-  height: 4.5rem;
+  height: 30%;
   border-left: .2rem solid #000;
   transform: translateY(-65%);
   transition: all .8s;
 
   .contact_box {
     width: 100%;
+    height: 100%;
     overflow: visible;
 
     .title_box {
       display: flex;
+      align-items: center;
       width: 100%;
-      height: 0.4rem;
+      // height: 0.6rem;
       margin-left: 5%;
       box-sizing: border-box;
 
@@ -31,11 +33,11 @@
 
       span {
         flex: 1;
-        display: flex;
-        width: 90%;
-        padding: 0 .1rem;
-        font-size: 0.28rem;
+        width: 100%;
+        padding: .1rem;
         color: #fff;
+        font-size: 0.28rem;
+        text-align: center;
         background-color: #000;
         white-space: nowrap;
       }
@@ -48,7 +50,7 @@
       justify-content: space-around;
       align-items: center;
       width: 90%;
-      height: 3.9rem;
+      height: 90%;
       margin-top: .2rem;
       margin-left: 12%;
       text-align: center;
@@ -59,6 +61,22 @@
         align-items: center;
         margin: .1rem 0;
         font-size: .6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    .left_middle_info {
+      width: 28%;
+
+      .contact_box {
+        .contact_link {
+          a {
+            font-size: 1.6rem;
+          }
+        }
       }
     }
   }

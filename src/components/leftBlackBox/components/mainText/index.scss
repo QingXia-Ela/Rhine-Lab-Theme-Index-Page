@@ -14,3 +14,13 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    .left_black_box {
+      .main_text {
+        justify-content: center;
+      }
+    }
+  }
+}

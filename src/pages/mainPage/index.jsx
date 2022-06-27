@@ -7,10 +7,13 @@ import AuthorInfo from '../../components/authorInfo';
 import LeftTopInfo from '../../components/leftTopInfo';
 import LeftBottomInfo from '../../components/leftBottomInfo';
 import LeftMiddleInfo from '../../components/leftMiddleInfo';
+import RightSwiper from '../../components/righrSwiper';
 
 class MainPage extends Component {
   state = {
-
+    swiperData: [
+      { title: '首页', link: '#', bg: '#' }
+    ]
   }
   render() {
     return (
@@ -22,12 +25,13 @@ class MainPage extends Component {
         <LeftTopInfo />
         <LeftBottomInfo>Copyright © 2019 - {new Date().getFullYear()}</LeftBottomInfo>
         <LeftMiddleInfo />
+        {/* 轮播选项，最大5个 */}
+        <RightSwiper data={this.state.swiperData} />
       </div>
     );
   }
 
   componentDidMount() {
-    console.log(this.mainSwiper);
   }
 }
 
