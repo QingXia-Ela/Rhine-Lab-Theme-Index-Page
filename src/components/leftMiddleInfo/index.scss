@@ -1,1 +1,69 @@
-.left_middle_info {}
+.left_middle_info {
+
+  @import url('../../assets/font_g8yanid91aq/iconfont.css');
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3.6rem;
+  height: 4.5rem;
+  border-left: .2rem solid #000;
+  transform: translateY(-65%);
+  transition: all .8s;
+
+  .contact_box {
+    width: 100%;
+    overflow: visible;
+
+    .title_box {
+      display: flex;
+      width: 100%;
+      height: 0.4rem;
+      margin-left: 5%;
+      box-sizing: border-box;
+
+      &::before {
+        content: '';
+        height: 100%;
+        margin-right: 5%;
+        border-left: .1rem solid #000;
+      }
+
+      span {
+        flex: 1;
+        display: flex;
+        width: 90%;
+        padding: 0 .1rem;
+        font-size: 0.28rem;
+        color: #fff;
+        background-color: #000;
+        white-space: nowrap;
+      }
+    }
+
+    .contact_link {
+      flex: 1;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+      height: 3.9rem;
+      margin-top: .2rem;
+      margin-left: 12%;
+      text-align: center;
+
+      a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: .1rem 0;
+        font-size: .6rem;
+      }
+    }
+  }
+}
+
+.left_middle_info.left_middle_info_unactive {
+  transform: translate(-150%, -65%);
+}

@@ -6,6 +6,7 @@ import RightInfo from '../../components/rightInfo';
 import AuthorInfo from '../../components/authorInfo';
 import LeftTopInfo from '../../components/leftTopInfo';
 import LeftBottomInfo from '../../components/leftBottomInfo';
+import LeftMiddleInfo from '../../components/leftMiddleInfo';
 
 class MainPage extends Component {
   state = {
@@ -20,6 +21,7 @@ class MainPage extends Component {
         <AuthorInfo>powered by<strong>&nbsp;rhine lab</strong></AuthorInfo>
         <LeftTopInfo />
         <LeftBottomInfo>Copyright © 2019 - {new Date().getFullYear()}</LeftBottomInfo>
+        <LeftMiddleInfo />
       </div>
     );
   }

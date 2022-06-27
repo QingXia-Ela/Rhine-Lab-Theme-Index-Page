@@ -3,6 +3,7 @@
   top: 8%;
   left: 2rem;
   width: 5.6rem;
+  transition: all .8s;
 
   .name,
   .info,
@@ -34,9 +35,6 @@
 @media screen and (max-width: 992px) {
   .mobile {
     .left_top_info {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       width: 100%;
       top: 3%;
       left: 0;
@@ -53,4 +51,8 @@
       }
     }
   }
+}
+
+.left_top_info.left_top_info_unactive {
+  filter: blur(5px);
 }
