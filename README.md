@@ -1,5 +1,7 @@
 # 莱茵生命风格主页
 
+[![OSCS Status](https://www.oscs1024.com/platform/badge/QingXia-Ela/Rhine-Lab-Theme-Index-Page.svg?size=small)](https://www.oscs1024.com/project/QingXia-Ela/Rhine-Lab-Theme-Index-Page?ref=badge_small)
+
 使用 react 制作
 
 主要以轮播图形式进行展示各个选项
