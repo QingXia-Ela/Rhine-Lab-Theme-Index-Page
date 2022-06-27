@@ -1,6 +1,39 @@
-.right_swiper {
+.right_middle_container {
+  z-index: 10;
   position: absolute;
   top: 50%;
   right: 2rem;
-  transform: translateY(-50%);
+  width: 18rem;
+  height: 70%;
+  border: .1rem solid #ddd;
+  border-image: linear-gradient(130deg, #edecec, #c0c0bb) 20 10;
+  transform: translate3d(0, -50%, -0.02rem) rotateY(-0.2deg);
+  transition: all .8s;
+
+  &:hover {
+    transform: translate3d(-1rem, -50%, -0.02rem) rotateY(-0.13deg);
+  }
+
+  .right_swiper {
+    position: absolute;
+    left: 70%;
+    width: 10rem;
+    height: 80%;
+    overflow: hidden;
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      width: 4rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .mobile {
+    .right_middle_container {
+      height: 30%;
+    }
+  }
 }
