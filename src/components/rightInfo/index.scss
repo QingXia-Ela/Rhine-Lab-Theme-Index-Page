@@ -53,6 +53,8 @@
   }
 }
 
-.right_info.right_info_unactive {
-  transform: translateX(100%);
+.unactive {
+  .right_info {
+    transform: translateX(100%);
+  }
 }

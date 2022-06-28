@@ -53,6 +53,8 @@
   }
 }
 
-.left_top_info.left_top_info_unactive {
-  filter: blur(5px);
+.unactive {
+  .left_top_info {
+    filter: blur(5px);
+  }
 }

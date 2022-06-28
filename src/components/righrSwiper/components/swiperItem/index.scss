@@ -1,5 +1,4 @@
 .right_middle_container {
-
   .right_swiper {
     .swiper-slide {
       .content {
@@ -15,7 +14,7 @@
           width: 30vw;
           height: 0.04rem;
           background-color: #000;
-          transition: left 1s;
+          transition: left .8s;
         }
 
         &:hover {
@@ -69,5 +68,18 @@
       }
     }
   }
+}
 
+@media screen and (max-width: 1280px) {
+  .mobile {
+    .right_middle_container .right_swiper .swiper-slide .text {
+      height: 2.4rem;
+      line-height: 2.4rem;
+      font-size: .7rem;
+
+      &:hover {
+        font-size: .8rem;
+      }
+    }
+  }
 }

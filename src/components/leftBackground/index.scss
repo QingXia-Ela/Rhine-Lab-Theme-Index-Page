@@ -1,0 +1,19 @@
+.right_background {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: url(../../assets/rhineLab.png) top/cover no-repeat;
+  mask: linear-gradient(90deg, #fff, transparent 100%);
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.startProcess {
+  .right_background {
+    opacity: 0.25;
+  }
+}

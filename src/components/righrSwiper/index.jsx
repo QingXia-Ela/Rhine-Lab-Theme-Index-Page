@@ -4,6 +4,8 @@ import 'swiper/css/swiper.min.css'
 
 import RightSwiperBG from './components/background';
 import SwiperItem from './components/swiperItem';
+import PaperClipImg from './components/paperClipImg';
+import PaperClipInfo from './components/paperClipInfo';
 
 import './index.scss'
 
@@ -23,6 +25,8 @@ class RightSwiper extends Component {
             <SwiperItem>啊对对对对</SwiperItem>
           </div>
         </div>
+        <PaperClipImg />
+        <PaperClipInfo />
       </div>
     );
   }
@@ -33,7 +37,22 @@ class RightSwiper extends Component {
       slidesPerView: 3,
       observer: true,
       observeParents: true,
-      mousewheel: true
+      mousewheel: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 3,
+        }
+      },
+      on: {
+        resize() {
+          setTimeout(() => {
+            this.update()
+          }, 500)
+        }
+      }
     })
 
     this.setState({

@@ -13,8 +13,6 @@
 
   span {
     transform: translateX(-300%);
-    animation: leftBottomHideText 1.6s ease 1s;
-    animation-fill-mode: forwards;
   }
 
   &::before {
@@ -43,9 +41,20 @@
   }
 }
 
-.left_bottom_info.left_bottom_info_unactive {
-  right: 0;
-  transform: translateX(100%);
+.unactive {
+  .left_bottom_info {
+    right: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.startProcess {
+  .left_bottom_info {
+    span {
+      animation: leftBottomHideText 1.6s ease;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 @keyframes leftBottomHideText {

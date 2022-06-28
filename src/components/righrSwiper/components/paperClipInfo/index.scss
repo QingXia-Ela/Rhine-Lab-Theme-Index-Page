@@ -1,0 +1,86 @@
+.right_middle_container {
+  .paper_clip_info {
+    position: absolute;
+    left: 6%;
+    bottom: 10%;
+    width: 50%;
+    height: 20%;
+
+    .company_position {
+      position: relative;
+      width: 25%;
+      perspective: 100px;
+
+      span {
+        z-index: 100;
+        position: relative;
+        display: block;
+        padding: .04rem .4rem;
+        color: #fff;
+        font-size: .36rem;
+        background-color: #000;
+        text-align: center;
+      }
+
+      &::after {
+        content: '';
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 10%;
+        background-color: #888;
+        opacity: 0.6;
+      }
+    }
+
+    .container {
+      position: relative;
+      top: .4rem;
+
+      .name {
+        color: #fff;
+        padding: .1rem .4rem;
+        background-color: #000;
+        font-size: .8rem;
+        text-align: center;
+      }
+
+      .icon_tip {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
+        padding: .3rem;
+        background-color: #fff;
+        overflow: hidden;
+
+        p {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          margin: 0;
+
+          &::before {
+            content: '';
+            width: 0.24rem;
+            height: 0.24rem;
+            margin-right: .2rem;
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mobile {
+    .right_middle_container {
+      .paper_clip_info {
+        display: none;
+      }
+    }
+  }
+}

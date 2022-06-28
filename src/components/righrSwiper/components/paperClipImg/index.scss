@@ -1,0 +1,48 @@
+.right_middle_container {
+  .paperclip_img {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    width: 40%;
+    height: 70%;
+
+    .img_container {
+      z-index: 10;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#b6ab8c, #eee 10%, #eee 90%, #769437 100%);
+      box-shadow: 0 0 5px 1px #fff;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    &::after {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      left: 3%;
+      top: 2%;
+      width: 100%;
+      height: 100%;
+      background-color: #ccc;
+      box-shadow: 0 0 5px 1px #ccc;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mobile {
+    .right_middle_container {
+      .paperclip_img {
+        display: none;
+      }
+    }
+  }
+}

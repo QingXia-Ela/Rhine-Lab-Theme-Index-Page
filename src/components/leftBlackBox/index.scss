@@ -1,8 +1,6 @@
 .left_black_box {
-
-  overflow: hidden;
-
   .core_box {
+    z-index: 100;
     position: absolute;
     top: 34%;
     left: 16%;
@@ -60,21 +58,23 @@
   }
 }
 
-.left_black_box.left_black_box_unactive {
-  .core_box {
-    top: 50%;
-    left: 50%;
-    width: 5.5rem;
-    transform: translate(-50%, -50%);
+.unactive {
+  .left_black_box {
+    .core_box {
+      top: 50%;
+      left: 50%;
+      width: 5.5rem;
+      transform: translate(-50%, -50%);
 
-    &::before {
-      opacity: 1;
-      transform: translateY(-50%) rotateZ(45deg);
-    }
+      &::before {
+        opacity: 1;
+        transform: translateY(-50%) rotateZ(45deg);
+      }
 
-    &::after {
-      opacity: 1;
-      transform: translateX(-50%) rotateZ(45deg);
+      &::after {
+        opacity: 1;
+        transform: translateX(-50%) rotateZ(45deg);
+      }
     }
   }
 }

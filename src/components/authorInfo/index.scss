@@ -1,4 +1,5 @@
 .author_info {
+  z-index: 100;
   display: flex;
   align-items: center;
   position: absolute;
@@ -13,8 +14,6 @@
 
   span {
     transform: translateX(300%);
-    animation: authorHideText 1.6s ease 1s;
-    animation-fill-mode: forwards;
   }
 
   &::after {
@@ -42,9 +41,20 @@
   }
 }
 
-.author_info.author_info_unactive {
-  right: 0;
-  transform: translateX(100%);
+.unactive {
+  .author_info {
+    right: 0;
+    transform: translateX(100%);
+  }
+}
+
+.startProcess {
+  .author_info {
+    span {
+      animation: authorHideText 1.6s ease;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 @keyframes authorHideText {
