@@ -25,12 +25,12 @@ class MainPage extends Component {
       <div ref={c => this.mainSwiper = c} id="mainBox" className={this.state.style}>
         <LeftBlackBox />
         <RightInfo title={'director'} name={'DOROTHY'} uid={233} />
-        <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://space.bilibili.com/86894342">QingXia_Ela</a></AuthorInfo>
+        <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://github.com/QingXia-Ela">QingXia_Ela</a></AuthorInfo>
         <LeftTopInfo />
         <LeftBottomInfo>Copyright © 2019 - {new Date().getFullYear()}</LeftBottomInfo>
         <LeftMiddleInfo />
         <RightSwiper data={this.state.swiperData} />
-        <LeftBackground />
+        <LeftBackground bgPath={'./images/rhineLab.png'} />
         <RightBackground />
       </div>
     );

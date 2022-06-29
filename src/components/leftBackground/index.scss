@@ -5,7 +5,10 @@
   left: 0;
   width: 40%;
   height: 100%;
-  background: url(../../assets/rhineLab.png) top/cover no-repeat;
+  // background: url(../../assets/rhineLab.png) top/cover no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   mask: linear-gradient(90deg, #fff, transparent 100%);
   transform: translateY(-50%);
   opacity: 0;

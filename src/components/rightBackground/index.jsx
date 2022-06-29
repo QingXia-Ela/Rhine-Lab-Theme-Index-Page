@@ -6,7 +6,7 @@ class RightBackground extends Component {
     let res = []
     for (let i = 0; i < 8; i++) {
       res.push(
-        <div className="X_decoration">
+        <div className="X_decoration" key={i}>
           <div className="dot">
             <div className="t"></div>
             <div className="l"></div>
