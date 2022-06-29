@@ -7,9 +7,9 @@ class RightInfo extends Component {
   render() {
     return (
       <div className="right_info">
-        <div className='top_title'>title</div>
-        <div className='name'>Shiina's Home</div>
-        <div className='bottom_uid'>uid</div>
+        <div className='top_title'>{this.props.title}</div>
+        <div className='name'>{this.props.name}</div>
+        <div className='bottom_uid'>{this.props.uid}</div>
       </div>
     );
   }

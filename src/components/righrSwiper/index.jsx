@@ -19,13 +19,14 @@ class RightSwiper extends Component {
         <RightSwiperBG />
         <div ref={c => this.mainSwiper = c} id='select' className="right_swiper swiper">
           <div className="swiper-wrapper">
-            <SwiperItem>啊对对对对</SwiperItem>
-            <SwiperItem>test</SwiperItem>
-            <SwiperItem>啊对对对对</SwiperItem>
-            <SwiperItem>啊对对对对</SwiperItem>
+            {
+              this.props.data.map((val, i) => {
+                return <SwiperItem link={val.link} key={i}>{val.title}</SwiperItem>
+              })
+            }
           </div>
         </div>
-        <PaperClipImg />
+        <PaperClipImg bgMode={false} bgPath={'./images/rhineLogo.png'} />
         <PaperClipInfo />
       </div>
     );

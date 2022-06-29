@@ -9,11 +9,13 @@ import LeftBottomInfo from '../../components/leftBottomInfo';
 import LeftMiddleInfo from '../../components/leftMiddleInfo';
 import RightSwiper from '../../components/righrSwiper';
 import LeftBackground from '../../components/leftBackground';
+import RightBackground from '../../components/rightBackground';
 
 class MainPage extends Component {
   state = {
     swiperData: [
-      { title: '首页', link: '#', bg: '#' }
+      { title: '首页', link: '#' },
+      { title: '博客', link: '#' }
     ],
     style: 'mobile unactive'
   }
@@ -22,13 +24,14 @@ class MainPage extends Component {
       // 使用 mobile 样式激活移动端
       <div ref={c => this.mainSwiper = c} id="mainBox" className={this.state.style}>
         <LeftBlackBox />
-        <RightInfo />
-        <AuthorInfo>powered by<strong>&nbsp;rhine lab</strong></AuthorInfo>
+        <RightInfo title={'director'} name={'DOROTHY'} uid={233} />
+        <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://space.bilibili.com/86894342">QingXia_Ela</a></AuthorInfo>
         <LeftTopInfo />
         <LeftBottomInfo>Copyright © 2019 - {new Date().getFullYear()}</LeftBottomInfo>
         <LeftMiddleInfo />
         <RightSwiper data={this.state.swiperData} />
         <LeftBackground />
+        <RightBackground />
       </div>
     );
   }

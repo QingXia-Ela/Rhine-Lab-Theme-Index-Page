@@ -6,7 +6,7 @@ class SwiperItem extends Component {
   render() {
     return (
       <div className="swiper-slide">
-        <div className="content">
+        <a href={this.props.link ? this.props.link : '#'} className="content">
           <div className="text">
             <div className="black_dot">
               <div className="lb"></div>
@@ -17,7 +17,7 @@ class SwiperItem extends Component {
             {this.props.children}
             {/* <div className="black_underline"></div> */}
           </div>
-        </div>
+        </a>
       </div>
     );
   }

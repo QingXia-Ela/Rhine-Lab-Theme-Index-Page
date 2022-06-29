@@ -6,7 +6,7 @@ class LeftBackground extends Component {
   state = {}
   render() {
     return (
-      <div className="right_background"></div>
+      <div className="left_background"></div>
     );
   }
 }

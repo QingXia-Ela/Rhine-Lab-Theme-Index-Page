@@ -6,7 +6,7 @@ class RightSwiperBG extends Component {
   state = {}
   render() {
     return (
-      <div className="bg">
+      <div className="bg" style={{ background: this.props.background }}>
         <div className="mask"></div>
         {this.props.children}
       </div>

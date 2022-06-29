@@ -1,5 +1,9 @@
 .right_middle_container {
+  background-color: #edecec50;
+  transition: background-color .3s;
+
   .bg {
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,6 +24,8 @@
   }
 
   &:hover {
+    background-color: #edecec;
+
     .bg {
       filter: blur(2px);
     }

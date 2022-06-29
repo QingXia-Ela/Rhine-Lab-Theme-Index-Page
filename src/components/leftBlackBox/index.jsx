@@ -11,7 +11,7 @@ class LeftBlackBox extends Component {
   render() {
     return (
       // 加载中样式 left_black_box_unactive
-      <div className='left_black_box '>
+      <div className='left_black_box'>
         <div className="core_box">
           <HeadIntro>section</HeadIntro>
           <MainText>
