@@ -215,7 +215,7 @@ class LeftMiddleInfo extends Component {
 
 动画效果在 `主页` 下进行控制
 
-通过修改 `state` 中的 `style` 进行控制
+通过修改 `state` 中的 class样式 进行控制
 
 控制的元素 `id` 为 `mainPage` 
 
