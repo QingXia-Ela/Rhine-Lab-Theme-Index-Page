@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 // 覆盖样式
-import './styles/recover.scss'
+// import './styles/recover.scss'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

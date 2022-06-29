@@ -16,8 +16,7 @@ class MainPage extends Component {
   state = {
     swiperData: [
       { title: '首页', link: '#' },
-      { title: '博客', link: 'https://shiinafan.net/blog' },
-      { title: '短链生成', link: '#' }
+      { title: '博客', link: 'https://shiinafan.net/blog' }
     ],
     style: 'mobile unactive'
   }
@@ -29,12 +28,12 @@ class MainPage extends Component {
         <RightInfo title={''} name={"shiina's home"} uid={'这里是 Shiina 的小网站'} />
         <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://github.com/QingXia-Ela">QingXia_Ela</a></AuthorInfo>
         <LeftTopInfo />
-        <LeftBottomInfo>Copyright © {new Date().getFullYear()} - present</LeftBottomInfo>
+        <LeftBottomInfo>Copyright © {new Date().getFullYear()} - present Shiina's index</LeftBottomInfo>
         <LeftMiddleInfo />
         <RightSwiper data={this.state.swiperData} />
         {/* <LeftBackground bgPath={'./images/self/leftBg.jpg'} /> */}
         {/* <RightBackground openX={false} bgPath={'./images/self/rightBg.jpg'} /> */}
-        <MiddleBackground bgPath={'./images/self/middleBg.jpg'}></MiddleBackground>
+        <MiddleBackground bgPath={'./images/self/middleBg.webp'}></MiddleBackground>
       </div>
     );
   }
