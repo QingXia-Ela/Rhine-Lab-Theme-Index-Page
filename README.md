@@ -22,7 +22,7 @@
 
 ## 参考 & 使用素材
 
-[莱茵生命PPT模板](https://www.bilibili.com/video/BV19Z4y187)
+[莱茵生命PPT模板](https://www.bilibili.com/video/BV19Z4y187gi)
 
 [明日方舟莱茵生命特别映像](https://www.bilibili.com/video/BV1rr4y1b7sz)
 
