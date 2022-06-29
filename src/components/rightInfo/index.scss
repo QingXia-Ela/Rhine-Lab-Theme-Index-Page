@@ -46,9 +46,20 @@
 
 @media screen and (max-width: 992px) {
   .mobile {
+
     .right_info {
       width: 100%;
       bottom: 15%;
+      color: #fff !important;
+
+      .name {
+        border-color: #fff;
+
+        &::before {
+          background-color: #fff;
+
+        }
+      }
     }
   }
 }
