@@ -10,12 +10,14 @@ import LeftMiddleInfo from '../../components/leftMiddleInfo';
 import RightSwiper from '../../components/righrSwiper';
 import LeftBackground from '../../components/leftBackground';
 import RightBackground from '../../components/rightBackground';
+import MiddleBackground from '../../components/middleBackground';
 
 class MainPage extends Component {
   state = {
     swiperData: [
       { title: '首页', link: '#' },
-      { title: '博客', link: '#' }
+      { title: '博客', link: 'https://shiinafan.net/blog' },
+      { title: '短链生成', link: '#' }
     ],
     style: 'mobile unactive'
   }
@@ -23,15 +25,16 @@ class MainPage extends Component {
     return (
       // 使用 mobile 样式激活移动端
       <div ref={c => this.mainSwiper = c} id="mainBox" className={this.state.style}>
-        <LeftBlackBox />
-        <RightInfo title={'director'} name={'DOROTHY'} uid={233} />
+        {/* <LeftBlackBox /> */}
+        <RightInfo title={''} name={"shiina's home"} uid={'这里是 Shiina 的小网站'} />
         <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://github.com/QingXia-Ela">QingXia_Ela</a></AuthorInfo>
         <LeftTopInfo />
-        <LeftBottomInfo>Copyright © 2019 - {new Date().getFullYear()}</LeftBottomInfo>
+        <LeftBottomInfo>Copyright © {new Date().getFullYear()} - present</LeftBottomInfo>
         <LeftMiddleInfo />
         <RightSwiper data={this.state.swiperData} />
-        <LeftBackground bgPath={'./images/rhineLab.png'} />
-        <RightBackground />
+        {/* <LeftBackground bgPath={'./images/self/leftBg.jpg'} /> */}
+        {/* <RightBackground openX={false} bgPath={'./images/self/rightBg.jpg'} /> */}
+        <MiddleBackground bgPath={'./images/self/middleBg.jpg'}></MiddleBackground>
       </div>
     );
   }

@@ -12,6 +12,19 @@
   transform: translateZ(0);
   transition: opacity 0.8s;
 
+  .bg {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    mask: linear-gradient(90deg, transparent, #fff 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.8s;
+  }
+
 
   .X_decoration {
     display: flex;
@@ -83,5 +96,13 @@
 .unactive {
   .right_background {
     opacity: 0;
+  }
+}
+
+.startProcess {
+  .right_background {
+    .bg {
+      opacity: 0.3;
+    }
   }
 }

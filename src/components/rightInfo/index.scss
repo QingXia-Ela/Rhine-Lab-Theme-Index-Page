@@ -5,9 +5,10 @@
   flex-flow: column nowrap;
   justify-content: center;
   right: 0;
-  bottom: 15%;
-  min-width: 11rem;
+  top: 8%;
+  min-width: 10.5rem;
   height: 2rem;
+  // transform: translateX(-16%);
   transition: all .8s;
 
   .top_title,
@@ -24,7 +25,6 @@
 
   .name {
     font-family: 'NWB';
-    flex: 1;
     display: flex;
     align-items: flex-end;
     width: 100%;

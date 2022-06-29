@@ -7,7 +7,7 @@ class LeftMiddleInfo extends Component {
       <div className="left_middle_info">
         <div className="contact_box">
           <div className="title_box">
-            <span>from rhodeskesia</span>
+            <span>Contact With Me</span>
           </div>
           <div className="contact_link">
             <a href="https://github.com/QingXia-Ela/Rhine-Lab-Theme-Index-Page" className="iconfont icon-github"> </a>

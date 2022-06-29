@@ -4,8 +4,8 @@ import 'swiper/css/swiper.min.css'
 
 import RightSwiperBG from './components/background';
 import SwiperItem from './components/swiperItem';
-import PaperClipImg from './components/paperClipImg';
-import PaperClipInfo from './components/paperClipInfo';
+// import PaperClipImg from './components/paperClipImg';
+// import PaperClipInfo from './components/paperClipInfo';
 
 import './index.scss'
 
@@ -16,7 +16,7 @@ class RightSwiper extends Component {
   render() {
     return (
       <div className='right_middle_container'>
-        <RightSwiperBG />
+        {/* <RightSwiperBG background={'./images/self/rightSwiper.jpg'} /> */}
         <div ref={c => this.mainSwiper = c} id='select' className="right_swiper swiper">
           <div className="swiper-wrapper">
             {
@@ -26,8 +26,8 @@ class RightSwiper extends Component {
             }
           </div>
         </div>
-        <PaperClipImg bgMode={false} bgPath={'./images/rhineLogo.png'} />
-        <PaperClipInfo />
+        {/* <PaperClipImg bgMode={false} bgPath={'./images/rhineLogo.png'} /> */}
+        {/* <PaperClipInfo /> */}
       </div>
     );
   }

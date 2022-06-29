@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss'
 
-import HeadIntro from './components/headIntro';
+// import HeadIntro from './components/headIntro';
 import MainText from './components/mainText';
 
 import Tip from './components/mainText/components/tip';
@@ -13,11 +13,11 @@ class LeftBlackBox extends Component {
       // 加载中样式 left_black_box_unactive
       <div className='left_black_box'>
         <div className="core_box">
-          <HeadIntro>section</HeadIntro>
+          {/* <HeadIntro>hi</HeadIntro> */}
           <MainText>
-            <span>HELLO</span>
-            <span>WORLD</span>
-            <Tip>DAMEDANE DAMEYO DAMEDANOYO</Tip>
+            <span>on my</span>
+            <span>way</span>
+            <Tip>Welcome to shiina's home</Tip>
           </MainText>
         </div>
       </div>

@@ -2,22 +2,20 @@
   z-index: 10;
   position: absolute;
   top: 50%;
-  right: 3%;
-  width: 24rem;
-  height: 80%;
-  border: .1rem solid #ddd;
-  border-image: linear-gradient(90deg, #eee, #c0c0bb) 30 10;
-  transform: scale(0) translate3d(0, -50%, -3rem) rotateY(-20deg);
+  right: 0%;
+  width: 8rem;
+  height: 70%;
+  transform: scale(0) translate3d(0, -40%, -3rem) rotateY(-20deg);
   opacity: 0;
   transition: all .8s;
 
   &:hover {
-    transform: translate3d(-.4rem, -50%, -3rem) rotateY(-10deg) !important;
+    transform: translate3d(-.4rem, -40%, -3rem) rotateY(-10deg) !important;
   }
 
   .right_swiper {
     position: absolute;
-    left: 70%;
+    left: 25%;
     width: 10rem;
     height: 80%;
     text-align: center;
@@ -51,6 +49,6 @@
 .startProcess {
   .right_middle_container {
     opacity: 1;
-    transform: scale(1) translate3d(0, -50%, -3rem) rotateY(-20deg);
+    transform: scale(1) translate3d(0, -40%, -3rem) rotateY(-20deg);
   }
 }

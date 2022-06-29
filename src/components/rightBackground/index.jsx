@@ -22,8 +22,9 @@ class RightBackground extends Component {
   render() {
     return (
       <div className="right_background">
+        <div className="bg" style={{ backgroundImage: `url(${this.props.bgPath})` }}></div>
         {
-          this.renderX()
+          this.props.openX ? this.renderX() : null
         }
       </div>
     );

@@ -1,22 +1,20 @@
 .left_background {
   z-index: -1;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   width: 40%;
   height: 100%;
-  // background: url(../../assets/rhineLab.png) top/cover no-repeat;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   mask: linear-gradient(90deg, #fff, transparent 100%);
-  transform: translateY(-50%);
   opacity: 0;
   transition: opacity .3s;
 }
 
 .startProcess {
   .left_background {
-    opacity: 0.25;
+    opacity: 0.3;
   }
 }
