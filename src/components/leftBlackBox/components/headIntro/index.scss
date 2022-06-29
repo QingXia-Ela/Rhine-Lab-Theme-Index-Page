@@ -10,10 +10,11 @@
     font-size: .4rem;
     font-weight: 700;
     transform: translateY(-50%);
+    transition: all .8s;
   }
 }
 
-.left_black_box_unactive {
+.unactive {
   .head_intro {
     left: 50%;
     text-align: center;
