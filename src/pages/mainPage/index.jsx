@@ -16,7 +16,7 @@ class MainPage extends Component {
   state = {
     swiperData: [
       { title: '首页', link: '#' },
-      { title: '博客', link: 'https://shiinafan.net/blog' }
+      { title: '博客', link: '/blog' }
     ],
     style: 'mobile unactive'
   }
@@ -33,7 +33,7 @@ class MainPage extends Component {
         <RightSwiper data={this.state.swiperData} />
         {/* <LeftBackground bgPath={'./images/self/leftBg.jpg'} /> */}
         {/* <RightBackground openX={false} bgPath={'./images/self/rightBg.jpg'} /> */}
-        <MiddleBackground bgPath={'./images/self/middleBg.webp'}></MiddleBackground>
+        <MiddleBackground bgPath={'./images/self/bg.jpg'}></MiddleBackground>
       </div>
     );
   }
