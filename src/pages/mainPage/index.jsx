@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './index.scss'
 
+import Loading from '../../components/loading';
+
 import LeftBlackBox from '../../components/leftBlackBox';
 import RightInfo from '../../components/rightInfo';
 import AuthorInfo from '../../components/authorInfo';
@@ -24,6 +26,7 @@ class MainPage extends Component {
     return (
       // 使用 mobile 样式激活移动端
       <div ref={c => this.mainSwiper = c} id="mainBox" className={this.state.style}>
+        <Loading />
         {/* <LeftBlackBox /> */}
         <RightInfo title={''} name={"shiina's home"} uid={'这里是 Shiina 的小网站'} />
         <AuthorInfo>powered by<strong>&nbsp;React</strong> | theme by <a style={{ textDecoration: 'underline' }} href="https://github.com/QingXia-Ela">QingXia_Ela</a></AuthorInfo>
@@ -49,7 +52,7 @@ class MainPage extends Component {
       this.setState({
         style: 'mobile startProcess'
       })
-    }, 2800)
+    }, 3000)
   }
 }
 
