@@ -33,7 +33,7 @@ class MainPage extends Component {
         <RightSwiper data={this.state.swiperData} />
         {/* <LeftBackground bgPath={'./images/self/leftBg.jpg'} /> */}
         {/* <RightBackground openX={false} bgPath={'./images/self/rightBg.jpg'} /> */}
-        <MiddleBackground bgPath={'./images/self/bg.jpg'}></MiddleBackground>
+        <MiddleBackground bgPath={'./images/self/middleBg.webp'}></MiddleBackground>
       </div>
     );
   }
