@@ -10,6 +10,7 @@ import LeftMiddleInfo from '../../components/leftMiddleInfo';
 import RightSwiper from '../../components/righrSwiper';
 import LeftBackground from '../../components/leftBackground';
 import RightBackground from '../../components/rightBackground';
+import MiddleLogo from '../../components/middleLogo';
 
 class MainPage extends Component {
   state = {
@@ -19,6 +20,7 @@ class MainPage extends Component {
     ],
     style: 'mobile unactive'
   }
+
   render() {
     return (
       // 使用 mobile 样式激活移动端
@@ -32,6 +34,7 @@ class MainPage extends Component {
         <RightSwiper data={this.state.swiperData} />
         <LeftBackground bgPath={'./images/rhineLab.png'} />
         <RightBackground />
+        <MiddleLogo />
       </div>
     );
   }

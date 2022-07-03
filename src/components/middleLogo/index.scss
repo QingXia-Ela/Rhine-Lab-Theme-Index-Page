@@ -1,0 +1,26 @@
+.middle_logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  img {
+    width: 8%;
+  }
+}
+
+@media screen and (min-aspect-ratio: 21/9) {
+  .middle_logo {
+    opacity: 1;
+  }
+}
+
+.unactive {
+  .middle_logo {
+    opacity: 0;
+  }
+}

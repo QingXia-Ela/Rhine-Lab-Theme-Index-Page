@@ -211,6 +211,12 @@ class LeftMiddleInfo extends Component {
 
 修改信息请直接前往该组件文件夹下的 `index.jsx` 进行修改
 
+### 中间 logo 
+
+对应 `./src/components/middleLogo`
+
+在 scss 中设置了宽高比为 `21 / 9` 时才会进行展示
+
 ## 动画转换
 
 动画效果在 `主页` 下进行控制
