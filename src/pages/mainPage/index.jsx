@@ -20,7 +20,7 @@ class MainPage extends Component {
       { title: '首页', link: '#' },
       { title: '博客', link: '/blog' }
     ],
-    style: 'mobile unactive'
+    style: 'mobile startProcess'
   }
   render() {
     return (
@@ -39,20 +39,6 @@ class MainPage extends Component {
         <MiddleBackground bgPath={'./images/self/middleBg.webp'}></MiddleBackground>
       </div>
     );
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        style: 'mobile'
-      })
-    }, 1500);
-
-    setTimeout(() => {
-      this.setState({
-        style: 'mobile startProcess'
-      })
-    }, 3000)
   }
 }
 
