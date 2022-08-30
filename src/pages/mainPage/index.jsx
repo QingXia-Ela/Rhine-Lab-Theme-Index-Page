@@ -3,22 +3,20 @@ import './index.scss'
 
 import Loading from '../../components/loading';
 
-import LeftBlackBox from '../../components/leftBlackBox';
 import RightInfo from '../../components/rightInfo';
 import AuthorInfo from '../../components/authorInfo';
 import LeftTopInfo from '../../components/leftTopInfo';
 import LeftBottomInfo from '../../components/leftBottomInfo';
 import LeftMiddleInfo from '../../components/leftMiddleInfo';
 import RightSwiper from '../../components/righrSwiper';
-import LeftBackground from '../../components/leftBackground';
-import RightBackground from '../../components/rightBackground';
 import MiddleBackground from '../../components/middleBackground';
 
 class MainPage extends Component {
   state = {
     swiperData: [
       { title: '首页', link: '#' },
-      { title: '博客', link: '/blog' }
+      { title: '博客', link: '/blog' },
+      { title: '音乐台', link: '/music' }
     ],
     style: 'mobile startProcess'
   }
