@@ -47,7 +47,7 @@ cd Rhine-Lab-Theme-Index-Page
 npm install
 
 # 可以通过如下操作解决 npm 下载速度慢的问题
-npm install --registry=https://registry.npm.taobao.org
+npm install --registry=https://registry.npmmirror.com
 
 # 启动服务
 npm start
